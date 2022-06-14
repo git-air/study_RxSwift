@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45149A26283BEB0300A63C29 /* Geolocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45149A25283BEB0300A63C29 /* Geolocation.storyboard */; };
+		45149A28283BEB4800A63C29 /* GeolocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A27283BEB4800A63C29 /* GeolocationViewController.swift */; };
+		45149A2A2843AFC200A63C29 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A292843AFC200A63C29 /* GeolocationService.swift */; };
+		45149A2D284672B300A63C29 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A2C284672B300A63C29 /* CLLocationManager+Rx.swift */; };
+		45149A2F2846770800A63C29 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A2E2846770800A63C29 /* RxCLLocationManagerDelegateProxy.swift */; };
+		45149A322858E24800A63C29 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A302858E24800A63C29 /* RxImagePickerDelegateProxy.swift */; };
+		45149A332858E24800A63C29 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A312858E24800A63C29 /* UIImagePickerController+Rx.swift */; };
+		45149A362858E51F00A63C29 /* GitHubSignup1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45149A352858E51F00A63C29 /* GitHubSignup1.storyboard */; };
+		45149A3D2858F42C00A63C29 /* GitHubSignup1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A3C2858F42C00A63C29 /* GitHubSignup1ViewController.swift */; };
 		45DBF87D2822A23C00EA56D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */; };
 		45DBF87F2822A23C00EA56D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */; };
 		45DBF8812822A23C00EA56D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF8802822A23C00EA56D1 /* ViewController.swift */; };
@@ -19,11 +28,18 @@
 		45DBF89A2823367100EA56D1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 45DBF8992823367100EA56D1 /* RxSwift */; };
 		45DBF89D2823DA4A00EA56D1 /* Validation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DBF89C2823DA4A00EA56D1 /* Validation.storyboard */; };
 		45DBF89F2823DA7300EA56D1 /* ValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF89E2823DA7300EA56D1 /* ValidationViewController.swift */; };
-		45E56837283A9D02005D2FF4 /* Geolocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E56836283A9D02005D2FF4 /* Geolocation.storyboard */; };
-		45E56839283A9D16005D2FF4 /* GeolocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E56838283A9D16005D2FF4 /* GeolocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45149A25283BEB0300A63C29 /* Geolocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Geolocation.storyboard; sourceTree = "<group>"; };
+		45149A27283BEB4800A63C29 /* GeolocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationViewController.swift; sourceTree = "<group>"; };
+		45149A292843AFC200A63C29 /* GeolocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
+		45149A2C284672B300A63C29 /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		45149A2E2846770800A63C29 /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
+		45149A302858E24800A63C29 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
+		45149A312858E24800A63C29 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		45149A352858E51F00A63C29 /* GitHubSignup1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GitHubSignup1.storyboard; sourceTree = "<group>"; };
+		45149A3C2858F42C00A63C29 /* GitHubSignup1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignup1ViewController.swift; sourceTree = "<group>"; };
 		45DBF8792822A23C00EA56D1 /* LearnRxSwift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRxSwift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +52,6 @@
 		45DBF8942822ADCD00EA56D1 /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		45DBF89C2823DA4A00EA56D1 /* Validation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Validation.storyboard; sourceTree = "<group>"; };
 		45DBF89E2823DA7300EA56D1 /* ValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewController.swift; sourceTree = "<group>"; };
-		45E56836283A9D02005D2FF4 /* Geolocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Geolocation.storyboard; sourceTree = "<group>"; };
-		45E56838283A9D16005D2FF4 /* GeolocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45149A2B2846729300A63C29 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				45149A302858E24800A63C29 /* RxImagePickerDelegateProxy.swift */,
+				45149A312858E24800A63C29 /* UIImagePickerController+Rx.swift */,
+				45149A2C284672B300A63C29 /* CLLocationManager+Rx.swift */,
+				45149A2E2846770800A63C29 /* RxCLLocationManagerDelegateProxy.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		45149A342858E2E000A63C29 /* GithubSignup */ = {
+			isa = PBXGroup;
+			children = (
+				45149A372858EED000A63C29 /* UsingVanillaObservables > 1 */,
+				45149A352858E51F00A63C29 /* GitHubSignup1.storyboard */,
+			);
+			path = GithubSignup;
+			sourceTree = "<group>";
+		};
+		45149A372858EED000A63C29 /* UsingVanillaObservables > 1 */ = {
+			isa = PBXGroup;
+			children = (
+				45149A3C2858F42C00A63C29 /* GitHubSignup1ViewController.swift */,
+			);
+			path = "UsingVanillaObservables > 1";
+			sourceTree = "<group>";
+		};
 		45DBF8702822A23C00EA56D1 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +114,8 @@
 		45DBF87B2822A23C00EA56D1 /* LearnRxSwift3 */ = {
 			isa = PBXGroup;
 			children = (
+				45149A342858E2E000A63C29 /* GithubSignup */,
+				45149A2B2846729300A63C29 /* Extensions */,
 				45E56835283A9CDC005D2FF4 /* GeolocationExample */,
 				45DBF89B2823DA2900EA56D1 /* validation */,
 				45DBF8912822AD9600EA56D1 /* Numbers */,
@@ -82,6 +126,7 @@
 				45DBF8852822A23D00EA56D1 /* Assets.xcassets */,
 				45DBF8872822A23D00EA56D1 /* LaunchScreen.storyboard */,
 				45DBF88A2822A23D00EA56D1 /* Info.plist */,
+				45149A292843AFC200A63C29 /* GeolocationService.swift */,
 			);
 			path = LearnRxSwift3;
 			sourceTree = "<group>";
@@ -107,8 +152,8 @@
 		45E56835283A9CDC005D2FF4 /* GeolocationExample */ = {
 			isa = PBXGroup;
 			children = (
-				45E56836283A9D02005D2FF4 /* Geolocation.storyboard */,
-				45E56838283A9D16005D2FF4 /* GeolocationViewController.swift */,
+				45149A25283BEB0300A63C29 /* Geolocation.storyboard */,
+				45149A27283BEB4800A63C29 /* GeolocationViewController.swift */,
 			);
 			path = GeolocationExample;
 			sourceTree = "<group>";
@@ -178,8 +223,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45149A362858E51F00A63C29 /* GitHubSignup1.storyboard in Resources */,
 				45DBF8892822A23D00EA56D1 /* LaunchScreen.storyboard in Resources */,
-				45E56837283A9D02005D2FF4 /* Geolocation.storyboard in Resources */,
+				45149A26283BEB0300A63C29 /* Geolocation.storyboard in Resources */,
 				45DBF8932822ADA700EA56D1 /* Numbers.storyboard in Resources */,
 				45DBF8862822A23D00EA56D1 /* Assets.xcassets in Resources */,
 				45DBF89D2823DA4A00EA56D1 /* Validation.storyboard in Resources */,
@@ -194,12 +240,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45149A2A2843AFC200A63C29 /* GeolocationService.swift in Sources */,
+				45149A2F2846770800A63C29 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				45DBF8812822A23C00EA56D1 /* ViewController.swift in Sources */,
 				45DBF8952822ADCD00EA56D1 /* NumbersViewController.swift in Sources */,
+				45149A332858E24800A63C29 /* UIImagePickerController+Rx.swift in Sources */,
+				45149A2D284672B300A63C29 /* CLLocationManager+Rx.swift in Sources */,
 				45DBF87D2822A23C00EA56D1 /* AppDelegate.swift in Sources */,
+				45149A322858E24800A63C29 /* RxImagePickerDelegateProxy.swift in Sources */,
 				45DBF87F2822A23C00EA56D1 /* SceneDelegate.swift in Sources */,
 				45DBF89F2823DA7300EA56D1 /* ValidationViewController.swift in Sources */,
-				45E56839283A9D16005D2FF4 /* GeolocationViewController.swift in Sources */,
+				45149A28283BEB4800A63C29 /* GeolocationViewController.swift in Sources */,
+				45149A3D2858F42C00A63C29 /* GitHubSignup1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
