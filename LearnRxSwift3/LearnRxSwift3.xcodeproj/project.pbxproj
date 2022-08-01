@@ -18,6 +18,9 @@
 		45149A3D2858F42C00A63C29 /* GitHubSignup1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A3C2858F42C00A63C29 /* GitHubSignup1ViewController.swift */; };
 		45149A3F285B92E000A63C29 /* GithubSignup1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A3E285B92E000A63C29 /* GithubSignup1ViewModel.swift */; };
 		45149A41285B94DA00A63C29 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A40285B94DA00A63C29 /* Protocols.swift */; };
+		452B43C428662BE90040CDE4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452B43C328662BE90040CDE4 /* Wireframe.swift */; };
+		456158AC2897571A008E546F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AB2897571A008E546F /* ActivityIndicator.swift */; };
+		456158AE289757B9008E546F /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AD289757B9008E546F /* Disposable.swift */; };
 		45DBF87D2822A23C00EA56D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */; };
 		45DBF87F2822A23C00EA56D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */; };
 		45DBF8812822A23C00EA56D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF8802822A23C00EA56D1 /* ViewController.swift */; };
@@ -44,6 +47,9 @@
 		45149A3C2858F42C00A63C29 /* GitHubSignup1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignup1ViewController.swift; sourceTree = "<group>"; };
 		45149A3E285B92E000A63C29 /* GithubSignup1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSignup1ViewModel.swift; sourceTree = "<group>"; };
 		45149A40285B94DA00A63C29 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		452B43C328662BE90040CDE4 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		456158AB2897571A008E546F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		456158AD289757B9008E546F /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
 		45DBF8792822A23C00EA56D1 /* LearnRxSwift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRxSwift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +107,26 @@
 			path = "UsingVanillaObservables > 1";
 			sourceTree = "<group>";
 		};
+		452B43C128662BA80040CDE4 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				45149A342858E2E000A63C29 /* GithubSignup */,
+				45E56835283A9CDC005D2FF4 /* GeolocationExample */,
+				45DBF89B2823DA2900EA56D1 /* validation */,
+				45DBF8912822AD9600EA56D1 /* Numbers */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		452B43C228662BC70040CDE4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				452B43C328662BE90040CDE4 /* Wireframe.swift */,
+				456158AB2897571A008E546F /* ActivityIndicator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		45DBF8702822A23C00EA56D1 = {
 			isa = PBXGroup;
 			children = (
@@ -120,11 +146,9 @@
 		45DBF87B2822A23C00EA56D1 /* LearnRxSwift3 */ = {
 			isa = PBXGroup;
 			children = (
-				45149A342858E2E000A63C29 /* GithubSignup */,
+				452B43C228662BC70040CDE4 /* Services */,
+				452B43C128662BA80040CDE4 /* Example */,
 				45149A2B2846729300A63C29 /* Extensions */,
-				45E56835283A9CDC005D2FF4 /* GeolocationExample */,
-				45DBF89B2823DA2900EA56D1 /* validation */,
-				45DBF8912822AD9600EA56D1 /* Numbers */,
 				45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */,
 				45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */,
 				45DBF8802822A23C00EA56D1 /* ViewController.swift */,
@@ -133,6 +157,7 @@
 				45DBF8872822A23D00EA56D1 /* LaunchScreen.storyboard */,
 				45DBF88A2822A23D00EA56D1 /* Info.plist */,
 				45149A292843AFC200A63C29 /* GeolocationService.swift */,
+				456158AD289757B9008E546F /* Disposable.swift */,
 			);
 			path = LearnRxSwift3;
 			sourceTree = "<group>";
@@ -250,13 +275,16 @@
 				45149A2F2846770800A63C29 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				45DBF8812822A23C00EA56D1 /* ViewController.swift in Sources */,
 				45DBF8952822ADCD00EA56D1 /* NumbersViewController.swift in Sources */,
+				456158AE289757B9008E546F /* Disposable.swift in Sources */,
 				45149A332858E24800A63C29 /* UIImagePickerController+Rx.swift in Sources */,
+				452B43C428662BE90040CDE4 /* Wireframe.swift in Sources */,
 				45149A2D284672B300A63C29 /* CLLocationManager+Rx.swift in Sources */,
 				45DBF87D2822A23C00EA56D1 /* AppDelegate.swift in Sources */,
 				45149A3F285B92E000A63C29 /* GithubSignup1ViewModel.swift in Sources */,
 				45149A322858E24800A63C29 /* RxImagePickerDelegateProxy.swift in Sources */,
 				45149A41285B94DA00A63C29 /* Protocols.swift in Sources */,
 				45DBF87F2822A23C00EA56D1 /* SceneDelegate.swift in Sources */,
+				456158AC2897571A008E546F /* ActivityIndicator.swift in Sources */,
 				45DBF89F2823DA7300EA56D1 /* ValidationViewController.swift in Sources */,
 				45149A28283BEB4800A63C29 /* GeolocationViewController.swift in Sources */,
 				45149A3D2858F42C00A63C29 /* GitHubSignup1ViewController.swift in Sources */,
