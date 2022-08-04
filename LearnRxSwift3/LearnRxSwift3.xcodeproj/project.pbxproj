@@ -21,6 +21,10 @@
 		452B43C428662BE90040CDE4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452B43C328662BE90040CDE4 /* Wireframe.swift */; };
 		456158AC2897571A008E546F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AB2897571A008E546F /* ActivityIndicator.swift */; };
 		456158AE289757B9008E546F /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AD289757B9008E546F /* Disposable.swift */; };
+		456158B028993743008E546F /* DefaultImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AF28993743008E546F /* DefaultImplementations.swift */; };
+		456158B228993A7A008E546F /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158B128993A7A008E546F /* String+URL.swift */; };
+		456158B4289A8B98008E546F /* ViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158B3289A8B98008E546F /* ViewController+.swift */; };
+		456158B6289A8CA0008E546F /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158B5289A8CA0008E546F /* BindingExtensions.swift */; };
 		45DBF87D2822A23C00EA56D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */; };
 		45DBF87F2822A23C00EA56D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */; };
 		45DBF8812822A23C00EA56D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF8802822A23C00EA56D1 /* ViewController.swift */; };
@@ -50,6 +54,10 @@
 		452B43C328662BE90040CDE4 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		456158AB2897571A008E546F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		456158AD289757B9008E546F /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
+		456158AF28993743008E546F /* DefaultImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImplementations.swift; sourceTree = "<group>"; };
+		456158B128993A7A008E546F /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
+		456158B3289A8B98008E546F /* ViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+.swift"; sourceTree = "<group>"; };
+		456158B5289A8CA0008E546F /* BindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
 		45DBF8792822A23C00EA56D1 /* LearnRxSwift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRxSwift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,9 +99,11 @@
 		45149A342858E2E000A63C29 /* GithubSignup */ = {
 			isa = PBXGroup;
 			children = (
-				45149A372858EED000A63C29 /* UsingVanillaObservables > 1 */,
 				45149A352858E51F00A63C29 /* GitHubSignup1.storyboard */,
+				45149A372858EED000A63C29 /* UsingVanillaObservables > 1 */,
 				45149A40285B94DA00A63C29 /* Protocols.swift */,
+				456158AF28993743008E546F /* DefaultImplementations.swift */,
+				456158B5289A8CA0008E546F /* BindingExtensions.swift */,
 			);
 			path = GithubSignup;
 			sourceTree = "<group>";
@@ -158,6 +168,8 @@
 				45DBF88A2822A23D00EA56D1 /* Info.plist */,
 				45149A292843AFC200A63C29 /* GeolocationService.swift */,
 				456158AD289757B9008E546F /* Disposable.swift */,
+				456158B128993A7A008E546F /* String+URL.swift */,
+				456158B3289A8B98008E546F /* ViewController+.swift */,
 			);
 			path = LearnRxSwift3;
 			sourceTree = "<group>";
@@ -278,14 +290,18 @@
 				456158AE289757B9008E546F /* Disposable.swift in Sources */,
 				45149A332858E24800A63C29 /* UIImagePickerController+Rx.swift in Sources */,
 				452B43C428662BE90040CDE4 /* Wireframe.swift in Sources */,
+				456158B6289A8CA0008E546F /* BindingExtensions.swift in Sources */,
 				45149A2D284672B300A63C29 /* CLLocationManager+Rx.swift in Sources */,
 				45DBF87D2822A23C00EA56D1 /* AppDelegate.swift in Sources */,
 				45149A3F285B92E000A63C29 /* GithubSignup1ViewModel.swift in Sources */,
+				456158B228993A7A008E546F /* String+URL.swift in Sources */,
 				45149A322858E24800A63C29 /* RxImagePickerDelegateProxy.swift in Sources */,
 				45149A41285B94DA00A63C29 /* Protocols.swift in Sources */,
 				45DBF87F2822A23C00EA56D1 /* SceneDelegate.swift in Sources */,
+				456158B4289A8B98008E546F /* ViewController+.swift in Sources */,
 				456158AC2897571A008E546F /* ActivityIndicator.swift in Sources */,
 				45DBF89F2823DA7300EA56D1 /* ValidationViewController.swift in Sources */,
+				456158B028993743008E546F /* DefaultImplementations.swift in Sources */,
 				45149A28283BEB4800A63C29 /* GeolocationViewController.swift in Sources */,
 				45149A3D2858F42C00A63C29 /* GitHubSignup1ViewController.swift in Sources */,
 			);
@@ -444,6 +460,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,6 +489,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -5,4 +5,8 @@
 //  Created by AIR on 2022/08/02.
 //
 
-import Foundation
+extension String {
+    var URLEscaped: String {
+        return self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
+    }
+}

@@ -56,8 +56,39 @@ class GithubSignup1ViewModel {
         validatedPasswordRepeated = Observable.combineLatest(input.password, input.repeatedPassword, resultSelector: validationService.validateRepeatedPassword)
             .share(replay: 1)
         
-        let signinitIn = ActivityIndicator()
+        let signinigIn = ActivityIndicator()
+        self.signingIn = signinigIn.asObservable()
         
+        let usernameAndPassword = Observable.combineLatest(input.username, input.password) { (username: $0, password: $1 )}
+        
+        signedIn = input.loginTaps.withLatestFrom(usernameAndPassword)
+            .flatMapLatest { pair in
+                return API.signup(pair.username, password: pair.password)
+                    .observe(on: MainScheduler.instance)
+                    .asObservable().catchAndReturn(false)
+                    .trackActivity(signinigIn)
+            }
+            .flatMapLatest { loggedIn -> Observable<Bool> in
+                let message = loggedIn ? "Mock: Sifned in to GitHub." : "Mock: Sign in to GitHub failed"
+                return wireframe.promptFor(message, cancelAction: "OK", actions: [])
+                    .map { _ in
+                        loggedIn
+                    }
+            }
+            .share(replay: 1)
+        
+        signupEnabled = Observable.combineLatest(
+            validatedUsername,
+            validatedPassword,
+            validatedPasswordRepeated,
+            signingIn.asObservable()
+        ) { username, password, repeatPassword, signingIn in
+            username.isValid &&
+            password.isValid &&
+            repeatPassword.isValid &&
+            !signingIn
+        }
+        .distinctUntilChanged()
     }
     
     
