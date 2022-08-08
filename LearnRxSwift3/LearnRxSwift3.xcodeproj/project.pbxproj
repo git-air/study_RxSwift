@@ -27,6 +27,7 @@
 		456158B6289A8CA0008E546F /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158B5289A8CA0008E546F /* BindingExtensions.swift */; };
 		456158B828A11EBB008E546F /* GitHubSignup2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456158B728A11EBB008E546F /* GitHubSignup2.storyboard */; };
 		456158BB28A1203A008E546F /* GitHubSignup2ViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158BA28A1203A008E546F /* GitHubSignup2ViewControllerViewController.swift */; };
+		456158BD28A13DBB008E546F /* GithubSignup2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158BC28A13DBB008E546F /* GithubSignup2ViewModel.swift */; };
 		45DBF87D2822A23C00EA56D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */; };
 		45DBF87F2822A23C00EA56D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */; };
 		45DBF8812822A23C00EA56D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF8802822A23C00EA56D1 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		456158B5289A8CA0008E546F /* BindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
 		456158B728A11EBB008E546F /* GitHubSignup2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GitHubSignup2.storyboard; sourceTree = "<group>"; };
 		456158BA28A1203A008E546F /* GitHubSignup2ViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignup2ViewControllerViewController.swift; sourceTree = "<group>"; };
+		456158BC28A13DBB008E546F /* GithubSignup2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSignup2ViewModel.swift; sourceTree = "<group>"; };
 		45DBF8792822A23C00EA56D1 /* LearnRxSwift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRxSwift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				456158BA28A1203A008E546F /* GitHubSignup2ViewControllerViewController.swift */,
+				456158BC28A13DBB008E546F /* GithubSignup2ViewModel.swift */,
 			);
 			path = "UsingDriver > 2";
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45149A2A2843AFC200A63C29 /* GeolocationService.swift in Sources */,
+				456158BD28A13DBB008E546F /* GithubSignup2ViewModel.swift in Sources */,
 				45149A2F2846770800A63C29 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				45DBF8812822A23C00EA56D1 /* ViewController.swift in Sources */,
 				45DBF8952822ADCD00EA56D1 /* NumbersViewController.swift in Sources */,
