@@ -61,7 +61,7 @@ class GithubSignup2ViewModel {
                     .asDriver(onErrorJustReturn: false)
             }
             .flatMapLatest { loggedIn -> Driver<Bool> in
-                let message = loggedIn ? "Mock: Signed in to GitHub" : "Mock: Sign in to GitHub failed"
+                let message = loggedIn ? "Mock: Signed in to GitHub." : "Mock: Sign in to GitHub failed"
                 return wireframe.promptFor(message, cancelAction: "OK", actions: [])
                     .map { _ in
                         loggedIn
@@ -81,6 +81,6 @@ class GithubSignup2ViewModel {
             !signingIn
         }
         .distinctUntilChanged()
-            
+        
     }
 }

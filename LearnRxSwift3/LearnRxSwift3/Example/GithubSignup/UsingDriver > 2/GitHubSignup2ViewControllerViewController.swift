@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class GitHubSignup2ViewControllerViewController: UIViewController {
     @IBOutlet weak var usernameOutlet: UITextField!
@@ -51,20 +52,30 @@ class GitHubSignup2ViewControllerViewController: UIViewController {
             .drive(usernameValidationOutlet.rx.validationResult)
             .disposed(by: disposeBag)
         
+        viewModel.validatedPassword
+            .drive(passwordValidationOutlet.rx.validationResult)
+            .disposed(by: disposeBag)
         
-
-        // Do any additional setup after loading the view.
+        viewModel.validatedPasswordRepeated
+            .drive(repeatedPasswordValidationOutlet.rx.validationResult)
+            .disposed(by: disposeBag)
+        
+        viewModel.signingIn
+            .drive(signingUpOutlet.rx.isAnimating)
+            .disposed(by: disposeBag)
+        
+        viewModel.signedIn
+            .drive(onNext: { signedIn in
+                print("User signed in \(signedIn)")
+            })
+            .disposed(by: disposeBag)
+        
+        let tapBackground = UITapGestureRecognizer()
+        tapBackground.rx.event
+            .subscribe(onNext: { [weak self] _ in
+                self?.view.endEditing(true)
+            })
+            .disposed(by: disposeBag)
+        view.addGestureRecognizer(tapBackground)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
