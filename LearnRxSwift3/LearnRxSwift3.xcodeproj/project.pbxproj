@@ -28,6 +28,8 @@
 		456158B828A11EBB008E546F /* GitHubSignup2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456158B728A11EBB008E546F /* GitHubSignup2.storyboard */; };
 		456158BB28A1203A008E546F /* GitHubSignup2ViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158BA28A1203A008E546F /* GitHubSignup2ViewControllerViewController.swift */; };
 		456158BD28A13DBB008E546F /* GithubSignup2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158BC28A13DBB008E546F /* GithubSignup2ViewModel.swift */; };
+		4563C32C28A73F6B008D0647 /* APIWrappers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4563C32B28A73F6B008D0647 /* APIWrappers.storyboard */; };
+		4563C32E28A73F8C008D0647 /* APIWrappersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563C32D28A73F8C008D0647 /* APIWrappersViewController.swift */; };
 		45DBF87D2822A23C00EA56D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */; };
 		45DBF87F2822A23C00EA56D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */; };
 		45DBF8812822A23C00EA56D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF8802822A23C00EA56D1 /* ViewController.swift */; };
@@ -64,6 +66,8 @@
 		456158B728A11EBB008E546F /* GitHubSignup2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GitHubSignup2.storyboard; sourceTree = "<group>"; };
 		456158BA28A1203A008E546F /* GitHubSignup2ViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignup2ViewControllerViewController.swift; sourceTree = "<group>"; };
 		456158BC28A13DBB008E546F /* GithubSignup2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSignup2ViewModel.swift; sourceTree = "<group>"; };
+		4563C32B28A73F6B008D0647 /* APIWrappers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = APIWrappers.storyboard; sourceTree = "<group>"; };
+		4563C32D28A73F8C008D0647 /* APIWrappersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWrappersViewController.swift; sourceTree = "<group>"; };
 		45DBF8792822A23C00EA56D1 /* LearnRxSwift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRxSwift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 		452B43C128662BA80040CDE4 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4563C32A28A73F57008D0647 /* APIWrappers */,
 				45149A342858E2E000A63C29 /* GithubSignup */,
 				45E56835283A9CDC005D2FF4 /* GeolocationExample */,
 				45DBF89B2823DA2900EA56D1 /* validation */,
@@ -152,6 +157,15 @@
 				456158BC28A13DBB008E546F /* GithubSignup2ViewModel.swift */,
 			);
 			path = "UsingDriver > 2";
+			sourceTree = "<group>";
+		};
+		4563C32A28A73F57008D0647 /* APIWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				4563C32B28A73F6B008D0647 /* APIWrappers.storyboard */,
+				4563C32D28A73F8C008D0647 /* APIWrappersViewController.swift */,
+			);
+			path = APIWrappers;
 			sourceTree = "<group>";
 		};
 		45DBF8702822A23C00EA56D1 = {
@@ -289,6 +303,7 @@
 				45149A26283BEB0300A63C29 /* Geolocation.storyboard in Resources */,
 				45DBF8932822ADA700EA56D1 /* Numbers.storyboard in Resources */,
 				45DBF8862822A23D00EA56D1 /* Assets.xcassets in Resources */,
+				4563C32C28A73F6B008D0647 /* APIWrappers.storyboard in Resources */,
 				45DBF89D2823DA4A00EA56D1 /* Validation.storyboard in Resources */,
 				45DBF8842822A23C00EA56D1 /* Main.storyboard in Resources */,
 			);
@@ -324,6 +339,7 @@
 				456158B028993743008E546F /* DefaultImplementations.swift in Sources */,
 				45149A28283BEB4800A63C29 /* GeolocationViewController.swift in Sources */,
 				45149A3D2858F42C00A63C29 /* GitHubSignup1ViewController.swift in Sources */,
+				4563C32E28A73F8C008D0647 /* APIWrappersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
