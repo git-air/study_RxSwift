@@ -13,20 +13,149 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="APIWrappersViewController" customModule="LearnRxSwift3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrm-ob-AIw">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ESs-8P-Orl">
+                                        <rect key="frame" x="0.0" y="0.0" width="500" height="774"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VWD-zp-NxA">
+                                                <rect key="frame" x="0.0" y="0.0" width="500" height="32"/>
+                                                <segments>
+                                                    <segment title="First"/>
+                                                    <segment title="Second"/>
+                                                </segments>
+                                            </segmentedControl>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FDY-YA-eUH">
+                                                <rect key="frame" x="-2" y="31" width="504" height="31"/>
+                                            </slider>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VoU-b2-FHI">
+                                                <rect key="frame" x="0.0" y="61" width="502" height="31"/>
+                                            </switch>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H67-vO-jWF">
+                                                <rect key="frame" x="0.0" y="92" width="500" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zyq-XD-h1y">
+                                                <rect key="frame" x="0.0" y="123" width="500" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gau-BY-Lm8">
+                                                <rect key="frame" x="0.0" y="157" width="500" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="oVe-pW-3L0">
+                                                <rect key="frame" x="0.0" y="191" width="500" height="216"/>
+                                            </datePicker>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIw-pO-tC6">
+                                                <rect key="frame" x="0.0" y="407" width="500" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Open ActionSheet"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqQ-zq-3vH">
+                                                <rect key="frame" x="0.0" y="438" width="500" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="IoO-eW-8YC">
+                                                <rect key="frame" x="0.0" y="469" width="500" height="20"/>
+                                            </activityIndicatorView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Ki-uu-yod">
+                                                <rect key="frame" x="0.0" y="489" width="500" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="u71-Ok-n7h"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bbo-Cr-KVH">
+                                                <rect key="frame" x="0.0" y="589" width="500" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="mDZ-SE-6rz"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ln-qF-rTe">
+                                                <rect key="frame" x="0.0" y="689" width="500" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceq-yf-ZID">
+                                                <rect key="frame" x="0.0" y="709.5" width="500" height="64.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ESs-8P-Orl" firstAttribute="leading" secondItem="qrm-ob-AIw" secondAttribute="leading" id="15s-dD-1vs"/>
+                                    <constraint firstItem="ESs-8P-Orl" firstAttribute="height" secondItem="qrm-ob-AIw" secondAttribute="height" id="54G-zx-hE9"/>
+                                    <constraint firstItem="ESs-8P-Orl" firstAttribute="width" secondItem="qrm-ob-AIw" secondAttribute="width" id="CRY-ol-cOv"/>
+                                    <constraint firstItem="ESs-8P-Orl" firstAttribute="top" secondItem="qrm-ob-AIw" secondAttribute="top" id="NKS-du-keE"/>
+                                    <constraint firstAttribute="bottom" secondItem="ESs-8P-Orl" secondAttribute="bottom" id="ptG-bZ-gFf"/>
+                                    <constraint firstAttribute="trailing" secondItem="ESs-8P-Orl" secondAttribute="trailing" id="sak-rD-pmu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="qrm-ob-AIw" secondAttribute="bottom" id="0Js-6M-9jx"/>
+                            <constraint firstItem="qrm-ob-AIw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4J4-kV-BTE"/>
+                            <constraint firstItem="qrm-ob-AIw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="JQB-nr-7uD"/>
+                            <constraint firstItem="qrm-ob-AIw" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Jyy-6z-Xsd"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JBN-WG-8rL">
+                        <barButtonItem key="rightBarButtonItem" title="TapMe" id="Jwa-Yp-wEc"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="500" height="896"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="IoO-eW-8YC" id="Ivn-Uu-rkx"/>
+                        <outlet property="bbitem" destination="Jwa-Yp-wEc" id="ABg-Ox-bv2"/>
+                        <outlet property="button" destination="H67-vO-jWF" id="o91-l1-YQH"/>
+                        <outlet property="datePicker" destination="oVe-pW-3L0" id="0iI-xs-YwG"/>
+                        <outlet property="debugLabel" destination="6ln-qF-rTe" id="g28-rv-8l1"/>
+                        <outlet property="maypan" destination="EpN-mQ-2gD" id="jDh-SG-N5t"/>
+                        <outlet property="openActionSheet" destination="YIw-pO-tC6" id="lce-fC-xsg"/>
+                        <outlet property="openAlertView" destination="WqQ-zq-3vH" id="JLE-nM-NUm"/>
+                        <outlet property="segmentedControl" destination="VWD-zp-NxA" id="UGs-se-CQ9"/>
+                        <outlet property="slider" destination="FDY-YA-eUH" id="dKI-Ym-Gie"/>
+                        <outlet property="switcher" destination="VoU-b2-FHI" id="XzY-DC-Wk8"/>
+                        <outlet property="textField" destination="Zyq-XD-h1y" id="7qK-GQ-1wZ"/>
+                        <outlet property="textField2" destination="Gau-BY-Lm8" id="u0D-ez-MnM"/>
+                        <outlet property="textView" destination="6Ki-uu-yod" id="VIx-hp-sP6"/>
+                        <outlet property="textView2" destination="bbo-Cr-KVH" id="XIC-3y-TLv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="EpN-mQ-2gD"/>
             </objects>
-            <point key="canvasLocation" x="28" y="125"/>
+            <point key="canvasLocation" x="27.536231884057973" y="124.55357142857142"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

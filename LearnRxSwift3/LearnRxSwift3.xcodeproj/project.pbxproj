@@ -30,6 +30,7 @@
 		456158BD28A13DBB008E546F /* GithubSignup2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158BC28A13DBB008E546F /* GithubSignup2ViewModel.swift */; };
 		4563C32C28A73F6B008D0647 /* APIWrappers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4563C32B28A73F6B008D0647 /* APIWrappers.storyboard */; };
 		4563C32E28A73F8C008D0647 /* APIWrappersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563C32D28A73F8C008D0647 /* APIWrappersViewController.swift */; };
+		45CDCFD628C8B14D00421D50 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CDCFD528C8B14D00421D50 /* Operators.swift */; };
 		45DBF87D2822A23C00EA56D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */; };
 		45DBF87F2822A23C00EA56D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */; };
 		45DBF8812822A23C00EA56D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DBF8802822A23C00EA56D1 /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 		456158BC28A13DBB008E546F /* GithubSignup2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSignup2ViewModel.swift; sourceTree = "<group>"; };
 		4563C32B28A73F6B008D0647 /* APIWrappers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = APIWrappers.storyboard; sourceTree = "<group>"; };
 		4563C32D28A73F8C008D0647 /* APIWrappersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWrappersViewController.swift; sourceTree = "<group>"; };
+		45CDCFD528C8B14D00421D50 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		45DBF8792822A23C00EA56D1 /* LearnRxSwift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRxSwift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				45E56835283A9CDC005D2FF4 /* GeolocationExample */,
 				45DBF89B2823DA2900EA56D1 /* validation */,
 				45DBF8912822AD9600EA56D1 /* Numbers */,
+				45CDCFD528C8B14D00421D50 /* Operators.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				456158B228993A7A008E546F /* String+URL.swift in Sources */,
 				45149A322858E24800A63C29 /* RxImagePickerDelegateProxy.swift in Sources */,
 				45149A41285B94DA00A63C29 /* Protocols.swift in Sources */,
+				45CDCFD628C8B14D00421D50 /* Operators.swift in Sources */,
 				45DBF87F2822A23C00EA56D1 /* SceneDelegate.swift in Sources */,
 				456158B4289A8B98008E546F /* ViewController+.swift in Sources */,
 				456158AC2897571A008E546F /* ActivityIndicator.swift in Sources */,

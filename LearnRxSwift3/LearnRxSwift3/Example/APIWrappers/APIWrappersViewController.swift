@@ -6,26 +6,69 @@
 //
 
 import UIKit
+import CoreLocation
+import RxSwift
+import RxCocoa
 
-class APIWrappersViewController: UIViewController {
+extension UILabel {
+    open override var accessibilityValue: String! {
+        get {
+            return self.text
+        }
+        set {
+            self.text = newValue
+            self.accessibilityValue = newValue
+        }
+    }
+}
+
+class APIWrappersViewController: ViewController1 {
+    
+    @IBOutlet weak var debugLabel: UILabel!
+    @IBOutlet weak var openActionSheet: UIButton!
+    @IBOutlet weak var openAlertView: UIButton!
+    @IBOutlet weak var bbitem: UIBarButtonItem!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var switcher: UISwitch!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textField2: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet var maypan: UIPanGestureRecognizer!
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textView2: UITextView!
+    
+    let manager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.red
-
-        // Do any additional setup after loading the view.
+        datePicker.date = Date(timeIntervalSince1970: 0)
+        
+        bbitem.rx.tap
+            .subscribe(onNext: { [weak self] x in
+                self?.debug("UIBarButtonItem Tapped")
+            })
+            .disposed(by: disposeBag)
+        
+        let segmentedValue = BehaviorRelay(value: 0)
+        _ = segmentedControl.rx.value <-> segmentedValue
+        
+        segmentedValue.asObservable()
+            .subscribe(onNext: { [weak self] x in
+                self?.debug("UISegementedControl value \(x)")
+            })
+            .disposed(by: disposeBag)
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func debug(_ string: String) {
+        print(string)
+        debugLabel.text = string
     }
-    */
-
+    
 }
