@@ -62,6 +62,24 @@ class APIWrappersViewController: ViewController1 {
             })
             .disposed(by: disposeBag)
         
+        let switchValue = BehaviorRelay(value: true)
+        _ = switcher.rx.value <-> switchValue
+        
+        switchValue.asObservable()
+            .subscribe(onNext: { [weak self] x in
+                self?.debug("UISwitch value \(x)")
+            })
+            .disposed(by: disposeBag)
+        
+        switcher.rx.value
+            .bind(to: activityIndicator.rx.isAnimating)
+            .disposed(by: disposeBag)
+        
+        button.rx.tap
+            .subscribe(onNext: { [weak self] x in
+                self?.debug("UIButton Tapped")
+            })
+            .disposed(by: disposeBag)
         
     }
     
