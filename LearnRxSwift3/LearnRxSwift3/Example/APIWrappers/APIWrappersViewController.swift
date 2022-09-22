@@ -36,7 +36,7 @@ class APIWrappersViewController: ViewController1 {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet var maypan: UIPanGestureRecognizer!
+    @IBOutlet var mypan: UIPanGestureRecognizer!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textView2: UITextView!
     
@@ -81,6 +81,88 @@ class APIWrappersViewController: ViewController1 {
             })
             .disposed(by: disposeBag)
         
+        let sliderValue = BehaviorRelay<Float>(value: 1.0)
+        _ = slider.rx.value <-> sliderValue
+        
+        sliderValue.asObservable()
+            .subscribe(onNext: {[weak self] x in
+                self?.debug("UISlider value \(x)")
+            })
+            .disposed(by: disposeBag)
+        
+        let dateValue = BehaviorRelay(value: Date(timeIntervalSince1970: 0))
+        _ = datePicker.rx.date <-> dateValue
+        
+        dateValue.asObservable()
+            .subscribe(onNext: {[weak self] x in
+                self?.debug("UIDatePicer date \(x)")
+            })
+            .disposed(by: disposeBag)
+        
+        if #available(iOS 11.2, *) {
+            let textValue = BehaviorRelay(value: "")
+            _ = textField.rx.textInput <-> textValue
+            
+            textValue.asObservable()
+                .subscribe(onNext: { [weak self] x in
+                    self?.debug("UITextField text \(x)")
+                })
+                .disposed(by: disposeBag)
+            
+            let attributedTextValue = BehaviorRelay<NSAttributedString?>(value: NSAttributedString(string: ""))
+            _ = textField2.rx.attributedText <-> attributedTextValue
+            
+            attributedTextValue.asObservable()
+                .subscribe(onNext: { [weak self] x in
+                    self?.debug("UITextField attributedText \(x?.description ?? "")")
+                })
+                .disposed(by: disposeBag)
+        }
+        
+        mypan.rx.event
+            .subscribe(onNext: { [weak self] x in
+                self?.debug("UIGestureRecognizer event \(x.state.rawValue)")
+            })
+            .disposed(by: disposeBag)
+        
+        let textViewValue = BehaviorRelay(value: "")
+        _ = textView.rx.textInput <-> textViewValue
+
+        textViewValue.asObservable()
+            .subscribe(onNext: { [weak self] x in
+                self?.debug("UITextView text \(x)")
+            })
+            .disposed(by: disposeBag)
+
+        let attributedTextViewValue = BehaviorRelay<NSAttributedString?>(value: NSAttributedString(string: ""))
+        _ = textView2.rx.attributedText <-> attributedTextViewValue
+
+        attributedTextViewValue.asObservable()
+            .subscribe(onNext: { [weak self] x in
+                self?.debug("UITextView attributedText \(x?.description ?? "")")
+            })
+            .disposed(by: disposeBag)
+        
+        manager.requestWhenInUseAuthorization()
+
+        manager.rx.didUpdateLocations
+            .subscribe(onNext: { x in
+                print("rx.didUpdateLocations \(x)")
+            })
+            .disposed(by: disposeBag)
+
+        _ = manager.rx.didFailWithError
+            .subscribe(onNext: { x in
+                print("rx.didFailWithError \(x)")
+            })
+        
+        manager.rx.didChangeAuthorizationStatus
+            .subscribe(onNext: { status in
+                print("Authorization status \(status)")
+            })
+            .disposed(by: disposeBag)
+        
+        manager.startUpdatingLocation()
     }
     
     
