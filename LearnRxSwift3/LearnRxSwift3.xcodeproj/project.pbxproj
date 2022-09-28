@@ -18,9 +18,13 @@
 		45149A3D2858F42C00A63C29 /* GitHubSignup1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A3C2858F42C00A63C29 /* GitHubSignup1ViewController.swift */; };
 		45149A3F285B92E000A63C29 /* GithubSignup1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A3E285B92E000A63C29 /* GithubSignup1ViewModel.swift */; };
 		45149A41285B94DA00A63C29 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A40285B94DA00A63C29 /* Protocols.swift */; };
+		4525D55D28DC743D00F64262 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4525D55C28DC743D00F64262 /* Calculator.storyboard */; };
+		4525D56128E1BE1400F64262 /* Calculator1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525D56028E1BE1400F64262 /* Calculator1ViewController.swift */; };
+		4525D56328E1C00500F64262 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525D56228E1C00500F64262 /* Calculator.swift */; };
+		4525D56528E458C600F64262 /* Observable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525D56428E458C600F64262 /* Observable+Extensions.swift */; };
+		4525D56828E45BA400F64262 /* Feedbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525D56728E45BA400F64262 /* Feedbacks.swift */; };
 		452B43C428662BE90040CDE4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452B43C328662BE90040CDE4 /* Wireframe.swift */; };
 		456158AC2897571A008E546F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AB2897571A008E546F /* ActivityIndicator.swift */; };
-		456158AE289757B9008E546F /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AD289757B9008E546F /* Disposable.swift */; };
 		456158B028993743008E546F /* DefaultImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AF28993743008E546F /* DefaultImplementations.swift */; };
 		456158B228993A7A008E546F /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158B128993A7A008E546F /* String+URL.swift */; };
 		456158B4289A8B98008E546F /* ViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158B3289A8B98008E546F /* ViewController+.swift */; };
@@ -57,9 +61,13 @@
 		45149A3C2858F42C00A63C29 /* GitHubSignup1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignup1ViewController.swift; sourceTree = "<group>"; };
 		45149A3E285B92E000A63C29 /* GithubSignup1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSignup1ViewModel.swift; sourceTree = "<group>"; };
 		45149A40285B94DA00A63C29 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		4525D55C28DC743D00F64262 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
+		4525D56028E1BE1400F64262 /* Calculator1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator1ViewController.swift; sourceTree = "<group>"; };
+		4525D56228E1C00500F64262 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		4525D56428E458C600F64262 /* Observable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extensions.swift"; sourceTree = "<group>"; };
+		4525D56728E45BA400F64262 /* Feedbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedbacks.swift; sourceTree = "<group>"; };
 		452B43C328662BE90040CDE4 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		456158AB2897571A008E546F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
-		456158AD289757B9008E546F /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
 		456158AF28993743008E546F /* DefaultImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImplementations.swift; sourceTree = "<group>"; };
 		456158B128993A7A008E546F /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
 		456158B3289A8B98008E546F /* ViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+.swift"; sourceTree = "<group>"; };
@@ -131,15 +139,38 @@
 			path = "UsingVanillaObservables > 1";
 			sourceTree = "<group>";
 		};
+		4525D55B28DC741700F64262 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				4525D55C28DC743D00F64262 /* Calculator.storyboard */,
+				4525D56028E1BE1400F64262 /* Calculator1ViewController.swift */,
+				4525D56228E1C00500F64262 /* Calculator.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		4525D56628E45B0000F64262 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */,
+				45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */,
+				45DBF8802822A23C00EA56D1 /* ViewController.swift */,
+				45DBF8822822A23C00EA56D1 /* Main.storyboard */,
+				45DBF8872822A23D00EA56D1 /* LaunchScreen.storyboard */,
+				45DBF8852822A23D00EA56D1 /* Assets.xcassets */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		452B43C128662BA80040CDE4 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4525D55B28DC741700F64262 /* Calculator */,
 				4563C32A28A73F57008D0647 /* APIWrappers */,
 				45149A342858E2E000A63C29 /* GithubSignup */,
 				45E56835283A9CDC005D2FF4 /* GeolocationExample */,
 				45DBF89B2823DA2900EA56D1 /* validation */,
 				45DBF8912822AD9600EA56D1 /* Numbers */,
-				45CDCFD528C8B14D00421D50 /* Operators.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -190,20 +221,17 @@
 		45DBF87B2822A23C00EA56D1 /* LearnRxSwift3 */ = {
 			isa = PBXGroup;
 			children = (
+				4525D56628E45B0000F64262 /* iOS */,
 				452B43C228662BC70040CDE4 /* Services */,
 				452B43C128662BA80040CDE4 /* Example */,
 				45149A2B2846729300A63C29 /* Extensions */,
-				45DBF87C2822A23C00EA56D1 /* AppDelegate.swift */,
-				45DBF87E2822A23C00EA56D1 /* SceneDelegate.swift */,
-				45DBF8802822A23C00EA56D1 /* ViewController.swift */,
-				45DBF8822822A23C00EA56D1 /* Main.storyboard */,
-				45DBF8872822A23D00EA56D1 /* LaunchScreen.storyboard */,
-				45DBF8852822A23D00EA56D1 /* Assets.xcassets */,
-				45DBF88A2822A23D00EA56D1 /* Info.plist */,
+				4525D56428E458C600F64262 /* Observable+Extensions.swift */,
+				45CDCFD528C8B14D00421D50 /* Operators.swift */,
+				4525D56728E45BA400F64262 /* Feedbacks.swift */,
 				45149A292843AFC200A63C29 /* GeolocationService.swift */,
-				456158AD289757B9008E546F /* Disposable.swift */,
 				456158B128993A7A008E546F /* String+URL.swift */,
 				456158B3289A8B98008E546F /* ViewController+.swift */,
+				45DBF88A2822A23D00EA56D1 /* Info.plist */,
 			);
 			path = LearnRxSwift3;
 			sourceTree = "<group>";
@@ -306,6 +334,7 @@
 				45149A26283BEB0300A63C29 /* Geolocation.storyboard in Resources */,
 				45DBF8932822ADA700EA56D1 /* Numbers.storyboard in Resources */,
 				45DBF8862822A23D00EA56D1 /* Assets.xcassets in Resources */,
+				4525D55D28DC743D00F64262 /* Calculator.storyboard in Resources */,
 				4563C32C28A73F6B008D0647 /* APIWrappers.storyboard in Resources */,
 				45DBF89D2823DA4A00EA56D1 /* Validation.storyboard in Resources */,
 				45DBF8842822A23C00EA56D1 /* Main.storyboard in Resources */,
@@ -319,12 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4525D56128E1BE1400F64262 /* Calculator1ViewController.swift in Sources */,
 				45149A2A2843AFC200A63C29 /* GeolocationService.swift in Sources */,
 				456158BD28A13DBB008E546F /* GithubSignup2ViewModel.swift in Sources */,
 				45149A2F2846770800A63C29 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				45DBF8812822A23C00EA56D1 /* ViewController.swift in Sources */,
+				4525D56328E1C00500F64262 /* Calculator.swift in Sources */,
 				45DBF8952822ADCD00EA56D1 /* NumbersViewController.swift in Sources */,
-				456158AE289757B9008E546F /* Disposable.swift in Sources */,
 				45149A332858E24800A63C29 /* UIImagePickerController+Rx.swift in Sources */,
 				452B43C428662BE90040CDE4 /* Wireframe.swift in Sources */,
 				456158B6289A8CA0008E546F /* BindingExtensions.swift in Sources */,
@@ -335,10 +365,12 @@
 				456158B228993A7A008E546F /* String+URL.swift in Sources */,
 				45149A322858E24800A63C29 /* RxImagePickerDelegateProxy.swift in Sources */,
 				45149A41285B94DA00A63C29 /* Protocols.swift in Sources */,
+				4525D56528E458C600F64262 /* Observable+Extensions.swift in Sources */,
 				45CDCFD628C8B14D00421D50 /* Operators.swift in Sources */,
 				45DBF87F2822A23C00EA56D1 /* SceneDelegate.swift in Sources */,
 				456158B4289A8B98008E546F /* ViewController+.swift in Sources */,
 				456158AC2897571A008E546F /* ActivityIndicator.swift in Sources */,
+				4525D56828E45BA400F64262 /* Feedbacks.swift in Sources */,
 				45DBF89F2823DA7300EA56D1 /* ValidationViewController.swift in Sources */,
 				456158B028993743008E546F /* DefaultImplementations.swift in Sources */,
 				45149A28283BEB4800A63C29 /* GeolocationViewController.swift in Sources */,
