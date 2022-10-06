@@ -6,6 +6,10 @@
 	<string>常に位置情報を使用する場合</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>アプリの使用中のみ、または常に位置情報を使用する場合</string>
+	<key>NSCameraUsageDescription</key>
+	<string>カメラ確認</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

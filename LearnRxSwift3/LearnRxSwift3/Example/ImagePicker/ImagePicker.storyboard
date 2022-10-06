@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ImagePicker-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ImagePickerController1" customModule="LearnRxSwift3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYR-gV-fAO">
+                                <rect key="frame" x="186" y="637" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ldb-Ke-9Uu">
+                                <rect key="frame" x="20" y="20" width="374" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="YV8-jT-Z2i"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBG-dU-m2h">
+                                <rect key="frame" x="126" y="314" width="163" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Camera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJS-g3-s68">
+                                <rect key="frame" x="126" y="406" width="163" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gallery"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODM-wc-Yba">
+                                <rect key="frame" x="126" y="493" width="163" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crop"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ODM-wc-Yba" firstAttribute="top" secondItem="cJS-g3-s68" secondAttribute="bottom" constant="56" id="GLO-gv-gYR"/>
+                            <constraint firstItem="Ldb-Ke-9Uu" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailingMargin" id="Kz5-cD-OAP"/>
+                            <constraint firstItem="gBG-dU-m2h" firstAttribute="trailing" secondItem="cJS-g3-s68" secondAttribute="trailing" id="O6e-yt-ads"/>
+                            <constraint firstItem="Ldb-Ke-9Uu" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="Rrd-oV-YsQ"/>
+                            <constraint firstItem="Ldb-Ke-9Uu" firstAttribute="centerX" secondItem="gBG-dU-m2h" secondAttribute="centerX" id="TEh-O2-ufs"/>
+                            <constraint firstItem="gBG-dU-m2h" firstAttribute="top" secondItem="Ldb-Ke-9Uu" secondAttribute="bottom" constant="39" id="Ur7-fW-CNe"/>
+                            <constraint firstItem="cJS-g3-s68" firstAttribute="trailing" secondItem="ODM-wc-Yba" secondAttribute="trailing" id="ciz-yn-YU2"/>
+                            <constraint firstItem="gBG-dU-m2h" firstAttribute="leading" secondItem="cJS-g3-s68" secondAttribute="leading" id="f5j-CE-KgP"/>
+                            <constraint firstItem="cJS-g3-s68" firstAttribute="leading" secondItem="ODM-wc-Yba" secondAttribute="leading" id="kYy-K1-0bj"/>
+                            <constraint firstItem="cJS-g3-s68" firstAttribute="top" secondItem="gBG-dU-m2h" secondAttribute="bottom" constant="61" id="mjv-Yt-c1B"/>
+                            <constraint firstItem="gBG-dU-m2h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="126" id="mll-Rv-z0D"/>
+                            <constraint firstItem="Ldb-Ke-9Uu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="r3R-9o-bNT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DYR-gV-fAO" secondAttribute="bottom" constant="116" id="s2s-l0-Bvo"/>
+                            <constraint firstItem="ODM-wc-Yba" firstAttribute="centerX" secondItem="DYR-gV-fAO" secondAttribute="centerX" id="spM-va-Nrn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ImagePicker" id="OiV-8G-N6P"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="gBG-dU-m2h" id="b2T-k8-i5d"/>
+                        <outlet property="cropButton" destination="ODM-wc-Yba" id="P7g-sy-T1q"/>
+                        <outlet property="galleryButton" destination="cJS-g3-s68" id="WGU-IW-KY9"/>
+                        <outlet property="imageView" destination="Ldb-Ke-9Uu" id="r5N-oW-9Ke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="38.839285714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
