@@ -234,6 +234,33 @@
                                             <segue destination="E3i-cP-S0P" kind="show" id="cfM-GM-JTY"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="YHW-08-rbt" detailTextLabel="Fmo-HB-uen" style="IBUITableViewCellStyleSubtitle" id="KAz-yV-KdJ">
+                                        <rect key="frame" x="0.0" y="409.5" width="414" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KAz-yV-KdJ" id="JtA-8L-c10">
+                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="UIPickerView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YHW-08-rbt">
+                                                    <rect key="frame" x="20" y="7" width="74.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="UIPickerView example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fmo-HB-uen">
+                                                    <rect key="frame" x="20" y="23.5" width="116" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1ww-ax-wej" kind="show" id="UKO-2O-At0"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -327,6 +354,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JhY-OR-a3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1318" y="-28"/>
+        </scene>
+        <!--SimpleUIPickerViewExample1-->
+        <scene sceneID="Mn6-us-k0d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SimpleUIPickerViewExample1" id="1ww-ax-wej" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FLV-bh-xkx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QdS-6T-9oU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1393" y="7"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e35-aL-hpm">

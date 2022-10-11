@@ -15,6 +15,6 @@ import RxSwift
     typealias OSViewController = NSViewController
 #endif
 
-class ViewController1: OSViewController {
+class UIViewController1: OSViewController {
     var disposeBag = DisposeBag()
 }

@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class Calculator1ViewController: ViewController1 {
+class Calculator1ViewController: UIViewController1 {
 
     @IBOutlet weak var lastSignLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!

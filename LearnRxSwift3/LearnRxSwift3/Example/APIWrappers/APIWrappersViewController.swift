@@ -22,7 +22,7 @@ extension UILabel {
     }
 }
 
-class APIWrappersViewController: ViewController1 {
+class APIWrappersViewController: UIViewController1 {
     
     @IBOutlet weak var debugLabel: UILabel!
     @IBOutlet weak var openActionSheet: UIButton!

@@ -24,6 +24,7 @@
 		4525D56528E458C600F64262 /* Observable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525D56428E458C600F64262 /* Observable+Extensions.swift */; };
 		4525D56828E45BA400F64262 /* Feedbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525D56728E45BA400F64262 /* Feedbacks.swift */; };
 		452B43C428662BE90040CDE4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452B43C328662BE90040CDE4 /* Wireframe.swift */; };
+		452F4F4E28F57F830035CE72 /* SimpleUIPickerViewExample1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452F4F4D28F57F830035CE72 /* SimpleUIPickerViewExample1.storyboard */; };
 		456158AC2897571A008E546F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AB2897571A008E546F /* ActivityIndicator.swift */; };
 		456158B028993743008E546F /* DefaultImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AF28993743008E546F /* DefaultImplementations.swift */; };
 		456158B228993A7A008E546F /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158B128993A7A008E546F /* String+URL.swift */; };
@@ -70,6 +71,7 @@
 		4525D56428E458C600F64262 /* Observable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extensions.swift"; sourceTree = "<group>"; };
 		4525D56728E45BA400F64262 /* Feedbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedbacks.swift; sourceTree = "<group>"; };
 		452B43C328662BE90040CDE4 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		452F4F4D28F57F830035CE72 /* SimpleUIPickerViewExample1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleUIPickerViewExample1.storyboard; sourceTree = "<group>"; };
 		456158AB2897571A008E546F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		456158AF28993743008E546F /* DefaultImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImplementations.swift; sourceTree = "<group>"; };
 		456158B128993A7A008E546F /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		452B43C128662BA80040CDE4 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				452F4F4C28F57F5A0035CE72 /* UIPickerViewExample */,
 				45D74ECA28E5AD2C00AD9720 /* ImagePicker */,
 				4525D55B28DC741700F64262 /* Calculator */,
 				4563C32A28A73F57008D0647 /* APIWrappers */,
@@ -189,6 +192,14 @@
 				456158AB2897571A008E546F /* ActivityIndicator.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		452F4F4C28F57F5A0035CE72 /* UIPickerViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				452F4F4D28F57F830035CE72 /* SimpleUIPickerViewExample1.storyboard */,
+			);
+			path = UIPickerViewExample;
 			sourceTree = "<group>";
 		};
 		456158B928A11FFB008E546F /* UsingDriver > 2 */ = {
@@ -355,6 +366,7 @@
 				4563C32C28A73F6B008D0647 /* APIWrappers.storyboard in Resources */,
 				45DBF89D2823DA4A00EA56D1 /* Validation.storyboard in Resources */,
 				45DBF8842822A23C00EA56D1 /* Main.storyboard in Resources */,
+				452F4F4E28F57F830035CE72 /* SimpleUIPickerViewExample1.storyboard in Resources */,
 				45D74ECC28E5AD4400AD9720 /* ImagePicker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
