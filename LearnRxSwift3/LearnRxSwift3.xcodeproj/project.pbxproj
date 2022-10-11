@@ -25,6 +25,8 @@
 		4525D56828E45BA400F64262 /* Feedbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525D56728E45BA400F64262 /* Feedbacks.swift */; };
 		452B43C428662BE90040CDE4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452B43C328662BE90040CDE4 /* Wireframe.swift */; };
 		452F4F4E28F57F830035CE72 /* SimpleUIPickerViewExample1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452F4F4D28F57F830035CE72 /* SimpleUIPickerViewExample1.storyboard */; };
+		452F4F5028F5839E0035CE72 /* SimplePickerViewExample1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452F4F4F28F5839E0035CE72 /* SimplePickerViewExample1ViewController.swift */; };
+		452F4F5228F583B60035CE72 /* CustomPickerViewAdapterExample1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452F4F5128F583B60035CE72 /* CustomPickerViewAdapterExample1ViewController.swift */; };
 		456158AC2897571A008E546F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AB2897571A008E546F /* ActivityIndicator.swift */; };
 		456158B028993743008E546F /* DefaultImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AF28993743008E546F /* DefaultImplementations.swift */; };
 		456158B228993A7A008E546F /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158B128993A7A008E546F /* String+URL.swift */; };
@@ -72,6 +74,8 @@
 		4525D56728E45BA400F64262 /* Feedbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedbacks.swift; sourceTree = "<group>"; };
 		452B43C328662BE90040CDE4 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		452F4F4D28F57F830035CE72 /* SimpleUIPickerViewExample1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleUIPickerViewExample1.storyboard; sourceTree = "<group>"; };
+		452F4F4F28F5839E0035CE72 /* SimplePickerViewExample1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerViewExample1ViewController.swift; sourceTree = "<group>"; };
+		452F4F5128F583B60035CE72 /* CustomPickerViewAdapterExample1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewAdapterExample1ViewController.swift; sourceTree = "<group>"; };
 		456158AB2897571A008E546F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		456158AF28993743008E546F /* DefaultImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImplementations.swift; sourceTree = "<group>"; };
 		456158B128993A7A008E546F /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				452F4F4D28F57F830035CE72 /* SimpleUIPickerViewExample1.storyboard */,
+				452F4F4F28F5839E0035CE72 /* SimplePickerViewExample1ViewController.swift */,
+				452F4F5128F583B60035CE72 /* CustomPickerViewAdapterExample1ViewController.swift */,
 			);
 			path = UIPickerViewExample;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 				452B43C428662BE90040CDE4 /* Wireframe.swift in Sources */,
 				456158B6289A8CA0008E546F /* BindingExtensions.swift in Sources */,
 				45149A2D284672B300A63C29 /* CLLocationManager+Rx.swift in Sources */,
+				452F4F5028F5839E0035CE72 /* SimplePickerViewExample1ViewController.swift in Sources */,
 				456158BB28A1203A008E546F /* GitHubSignup2ViewControllerViewController.swift in Sources */,
 				45DBF87D2822A23C00EA56D1 /* AppDelegate.swift in Sources */,
 				45149A3F285B92E000A63C29 /* GithubSignup1ViewModel.swift in Sources */,
@@ -408,6 +415,7 @@
 				45149A28283BEB4800A63C29 /* GeolocationViewController.swift in Sources */,
 				45149A3D2858F42C00A63C29 /* GitHubSignup1ViewController.swift in Sources */,
 				4563C32E28A73F8C008D0647 /* APIWrappersViewController.swift in Sources */,
+				452F4F5228F583B60035CE72 /* CustomPickerViewAdapterExample1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
