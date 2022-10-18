@@ -25,6 +25,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom Adapters" image="rectangle.and.paperclip" catalog="system" id="MfI-ld-L1K"/>
+                    <connections>
+                        <outlet property="pickerView" destination="3RC-kb-Smh" id="Wfl-bn-Gz6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,6 +59,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="squareshape.dashed.squareshape" catalog="system" id="uXE-sL-5ea"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pickerView1" destination="zcV-er-E30" id="qNJ-ID-gxV"/>
+                        <outlet property="pickerView2" destination="aGQ-E8-jfI" id="AgH-CY-7ov"/>
+                        <outlet property="pickerView3" destination="KVM-nJ-fpm" id="WwS-Pc-xH4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zs1-DM-Paf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

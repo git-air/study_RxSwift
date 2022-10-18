@@ -6,26 +6,63 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class CustomPickerViewAdapterExample1ViewController: UIViewController {
-
+class CustomPickerViewAdapterExample1ViewController: UIViewController1 {
+    @IBOutlet weak var pickerView: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemBlue
+        Observable.just([[1, 2, 3], [5, 8, 13], [21, 34]])
+            .bind(to: pickerView.rx.items(adapter: PickerViewViewAdapter()))
+            .disposed(by: disposeBag)
+        
+        pickerView.rx.modelSelected(Int.self)
+            .subscribe(onNext: { models in
+                print(models)
+            })
+            .disposed(by: disposeBag)
+    }
 
-        // Do any additional setup after loading the view.
+}
+
+final class PickerViewViewAdapter
+: NSObject
+, UIPickerViewDataSource
+, UIPickerViewDelegate
+, RxPickerViewDataSourceType
+, SectionedViewDataSourceType {
+    typealias Element = [[CustomStringConvertible]]
+    private var items: [[CustomStringConvertible]] = []
+    
+    func model(at indexPath: IndexPath) throws -> Any {
+        items[indexPath.section][indexPath.row]
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        items.count
     }
-    */
-
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        items[component].count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        let label = UILabel()
+        label.text = items[component][row].description
+        label.textColor = UIColor.orange
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.textAlignment = .center
+        return label
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, observedEvent: Event<Element>) {
+        Binder(self) { (adapter, items) in
+            adapter.items = items
+            pickerView.reloadAllComponents()
+        }.on(observedEvent)
+    }
+    
 }
