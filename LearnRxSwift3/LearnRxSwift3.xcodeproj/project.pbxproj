@@ -29,6 +29,8 @@
 		452F4F5228F583B60035CE72 /* CustomPickerViewAdapterExample1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452F4F5128F583B60035CE72 /* CustomPickerViewAdapterExample1ViewController.swift */; };
 		452F4F5528FEB95C0035CE72 /* SimpleTableViewExample1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452F4F5428FEB95C0035CE72 /* SimpleTableViewExample1.storyboard */; };
 		452F4F5728FEB9810035CE72 /* SimpleTableViewExample1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452F4F5628FEB9810035CE72 /* SimpleTableViewExample1ViewController.swift */; };
+		452F4F5A290010000035CE72 /* SimpleTableViewExampleSectioned1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452F4F59290010000035CE72 /* SimpleTableViewExampleSectioned1.storyboard */; };
+		452F4F5C290010180035CE72 /* SimpleTableViewExampleSectioned1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452F4F5B290010180035CE72 /* SimpleTableViewExampleSectioned1ViewController.swift */; };
 		456158AC2897571A008E546F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AB2897571A008E546F /* ActivityIndicator.swift */; };
 		456158B028993743008E546F /* DefaultImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158AF28993743008E546F /* DefaultImplementations.swift */; };
 		456158B228993A7A008E546F /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456158B128993A7A008E546F /* String+URL.swift */; };
@@ -80,6 +82,8 @@
 		452F4F5128F583B60035CE72 /* CustomPickerViewAdapterExample1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewAdapterExample1ViewController.swift; sourceTree = "<group>"; };
 		452F4F5428FEB95C0035CE72 /* SimpleTableViewExample1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleTableViewExample1.storyboard; sourceTree = "<group>"; };
 		452F4F5628FEB9810035CE72 /* SimpleTableViewExample1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewExample1ViewController.swift; sourceTree = "<group>"; };
+		452F4F59290010000035CE72 /* SimpleTableViewExampleSectioned1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleTableViewExampleSectioned1.storyboard; sourceTree = "<group>"; };
+		452F4F5B290010180035CE72 /* SimpleTableViewExampleSectioned1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewExampleSectioned1ViewController.swift; sourceTree = "<group>"; };
 		456158AB2897571A008E546F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		456158AF28993743008E546F /* DefaultImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImplementations.swift; sourceTree = "<group>"; };
 		456158B128993A7A008E546F /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 		452B43C128662BA80040CDE4 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				452F4F5829000FDF0035CE72 /* SimpleTableViewExampleSectioned */,
 				452F4F5328FEB9390035CE72 /* SimpleTableViewExample */,
 				452F4F4C28F57F5A0035CE72 /* UIPickerViewExample */,
 				45D74ECA28E5AD2C00AD9720 /* ImagePicker */,
@@ -220,6 +225,15 @@
 				452F4F5628FEB9810035CE72 /* SimpleTableViewExample1ViewController.swift */,
 			);
 			path = SimpleTableViewExample;
+			sourceTree = "<group>";
+		};
+		452F4F5829000FDF0035CE72 /* SimpleTableViewExampleSectioned */ = {
+			isa = PBXGroup;
+			children = (
+				452F4F59290010000035CE72 /* SimpleTableViewExampleSectioned1.storyboard */,
+				452F4F5B290010180035CE72 /* SimpleTableViewExampleSectioned1ViewController.swift */,
+			);
+			path = SimpleTableViewExampleSectioned;
 			sourceTree = "<group>";
 		};
 		456158B928A11FFB008E546F /* UsingDriver > 2 */ = {
@@ -386,6 +400,7 @@
 				4563C32C28A73F6B008D0647 /* APIWrappers.storyboard in Resources */,
 				452F4F5528FEB95C0035CE72 /* SimpleTableViewExample1.storyboard in Resources */,
 				45DBF89D2823DA4A00EA56D1 /* Validation.storyboard in Resources */,
+				452F4F5A290010000035CE72 /* SimpleTableViewExampleSectioned1.storyboard in Resources */,
 				45DBF8842822A23C00EA56D1 /* Main.storyboard in Resources */,
 				452F4F4E28F57F830035CE72 /* SimpleUIPickerViewExample1.storyboard in Resources */,
 				45D74ECC28E5AD4400AD9720 /* ImagePicker.storyboard in Resources */,
@@ -417,6 +432,7 @@
 				456158BB28A1203A008E546F /* GitHubSignup2ViewControllerViewController.swift in Sources */,
 				45DBF87D2822A23C00EA56D1 /* AppDelegate.swift in Sources */,
 				45149A3F285B92E000A63C29 /* GithubSignup1ViewModel.swift in Sources */,
+				452F4F5C290010180035CE72 /* SimpleTableViewExampleSectioned1ViewController.swift in Sources */,
 				456158B228993A7A008E546F /* String+URL.swift in Sources */,
 				45149A322858E24800A63C29 /* RxImagePickerDelegateProxy.swift in Sources */,
 				45149A41285B94DA00A63C29 /* Protocols.swift in Sources */,
