@@ -13,20 +13,41 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="WikipediaSearch1ViewController" customModule="LearnRxSwift3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAv-ze-IL1">
-                                <rect key="frame" x="186" y="438" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wSC-tT-fOC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="efj-Pr-VQk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </tableView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PCM-Pd-a2f">
+                                <rect key="frame" x="30" y="340" width="354" height="128"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wSC-tT-fOC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6q0-4a-3XB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PCM-Pd-a2f" secondAttribute="trailing" constant="30" id="CyS-LJ-GHO"/>
+                            <constraint firstItem="PCM-Pd-a2f" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="P0J-wl-QEa"/>
+                            <constraint firstItem="wSC-tT-fOC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="a92-wj-8S6"/>
+                            <constraint firstItem="PCM-Pd-a2f" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="efY-gM-rsz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wSC-tT-fOC" secondAttribute="trailing" id="j75-sI-xHN"/>
+                            <constraint firstItem="PCM-Pd-a2f" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="l1D-Jf-gai"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wSC-tT-fOC" secondAttribute="bottom" id="neP-G6-8iL"/>
+                        </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="emptyView" destination="PCM-Pd-a2f" id="QGw-8c-cgs"/>
+                        <outlet property="resultsTableView" destination="wSC-tT-fOC" id="rRc-Yu-4Tp"/>
+                        <outlet property="searchBar" destination="efj-Pr-VQk" id="UMB-Cd-ed2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

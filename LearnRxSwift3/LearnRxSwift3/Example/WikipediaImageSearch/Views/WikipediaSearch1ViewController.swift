@@ -9,12 +9,22 @@ import UIKit
 
 class WikipediaSearch1ViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var resultsTableView: UITableView!
+    @IBOutlet weak var emptyView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemPink
+        self.edgesForExtendedLayout = .all
+        
+        configureTableDataSource()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func configureTableDataSource() {
+        resultsTableView.register(UINib(nibName: "WikipediaSearchCell", bundle: nil), forCellReuseIdentifier: "WikipediaSearchCell")
     }
     
 

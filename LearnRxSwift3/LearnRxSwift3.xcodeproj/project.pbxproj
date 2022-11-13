@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		4507458E291E62BA00251AFB /* WikipediaSearch1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507458D291E62BA00251AFB /* WikipediaSearch1.storyboard */; };
 		450745932921185E00251AFB /* WikipediaSearch1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450745922921185E00251AFB /* WikipediaSearch1ViewController.swift */; };
+		450745952921217700251AFB /* WikipediaSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450745942921217700251AFB /* WikipediaSearchCell.xib */; };
+		450745972921219700251AFB /* WikipediaSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450745962921219700251AFB /* WikipediaSearchCell.swift */; };
+		45074599292130D000251AFB /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45074598292130D000251AFB /* ImageService.swift */; };
+		4507459B2921357B00251AFB /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507459A2921357B00251AFB /* ReachabilityService.swift */; };
+		4507459D292136F800251AFB /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507459C292136F800251AFB /* Reachability.swift */; };
+		4507459F2921380300251AFB /* DownloadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507459E2921380300251AFB /* DownloadableImage.swift */; };
 		45149A26283BEB0300A63C29 /* Geolocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45149A25283BEB0300A63C29 /* Geolocation.storyboard */; };
 		45149A28283BEB4800A63C29 /* GeolocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A27283BEB4800A63C29 /* GeolocationViewController.swift */; };
 		45149A2A2843AFC200A63C29 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45149A292843AFC200A63C29 /* GeolocationService.swift */; };
@@ -65,6 +71,12 @@
 /* Begin PBXFileReference section */
 		4507458D291E62BA00251AFB /* WikipediaSearch1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WikipediaSearch1.storyboard; sourceTree = "<group>"; };
 		450745922921185E00251AFB /* WikipediaSearch1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaSearch1ViewController.swift; sourceTree = "<group>"; };
+		450745942921217700251AFB /* WikipediaSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikipediaSearchCell.xib; sourceTree = "<group>"; };
+		450745962921219700251AFB /* WikipediaSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaSearchCell.swift; sourceTree = "<group>"; };
+		45074598292130D000251AFB /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		4507459A2921357B00251AFB /* ReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+		4507459C292136F800251AFB /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4507459E2921380300251AFB /* DownloadableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableImage.swift; sourceTree = "<group>"; };
 		45149A25283BEB0300A63C29 /* Geolocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Geolocation.storyboard; sourceTree = "<group>"; };
 		45149A27283BEB4800A63C29 /* GeolocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationViewController.swift; sourceTree = "<group>"; };
 		45149A292843AFC200A63C29 /* GeolocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
@@ -153,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				450745922921185E00251AFB /* WikipediaSearch1ViewController.swift */,
+				450745942921217700251AFB /* WikipediaSearchCell.xib */,
+				450745962921219700251AFB /* WikipediaSearchCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +258,10 @@
 			children = (
 				452B43C328662BE90040CDE4 /* Wireframe.swift */,
 				456158AB2897571A008E546F /* ActivityIndicator.swift */,
+				45074598292130D000251AFB /* ImageService.swift */,
+				4507459E2921380300251AFB /* DownloadableImage.swift */,
+				4507459A2921357B00251AFB /* ReachabilityService.swift */,
+				4507459C292136F800251AFB /* Reachability.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -437,6 +455,7 @@
 				45DBF8892822A23D00EA56D1 /* LaunchScreen.storyboard in Resources */,
 				456158B828A11EBB008E546F /* GitHubSignup2.storyboard in Resources */,
 				45149A26283BEB0300A63C29 /* Geolocation.storyboard in Resources */,
+				450745952921217700251AFB /* WikipediaSearchCell.xib in Resources */,
 				45DBF8932822ADA700EA56D1 /* Numbers.storyboard in Resources */,
 				45DBF8862822A23D00EA56D1 /* Assets.xcassets in Resources */,
 				4525D55D28DC743D00F64262 /* Calculator.storyboard in Resources */,
@@ -466,9 +485,11 @@
 				456158BD28A13DBB008E546F /* GithubSignup2ViewModel.swift in Sources */,
 				45149A2F2846770800A63C29 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				45DBF8812822A23C00EA56D1 /* ViewController.swift in Sources */,
+				4507459F2921380300251AFB /* DownloadableImage.swift in Sources */,
 				4525D56328E1C00500F64262 /* Calculator.swift in Sources */,
 				45DBF8952822ADCD00EA56D1 /* NumbersViewController.swift in Sources */,
 				45149A332858E24800A63C29 /* UIImagePickerController+Rx.swift in Sources */,
+				4507459B2921357B00251AFB /* ReachabilityService.swift in Sources */,
 				452B43C428662BE90040CDE4 /* Wireframe.swift in Sources */,
 				456158B6289A8CA0008E546F /* BindingExtensions.swift in Sources */,
 				45149A2D284672B300A63C29 /* CLLocationManager+Rx.swift in Sources */,
@@ -478,6 +499,7 @@
 				45149A3F285B92E000A63C29 /* GithubSignup1ViewModel.swift in Sources */,
 				452F4F5C290010180035CE72 /* SimpleTableViewExampleSectioned1ViewController.swift in Sources */,
 				456158B228993A7A008E546F /* String+URL.swift in Sources */,
+				450745972921219700251AFB /* WikipediaSearchCell.swift in Sources */,
 				45149A322858E24800A63C29 /* RxImagePickerDelegateProxy.swift in Sources */,
 				45149A41285B94DA00A63C29 /* Protocols.swift in Sources */,
 				4525D56528E458C600F64262 /* Observable+Extensions.swift in Sources */,
@@ -487,11 +509,13 @@
 				456158AC2897571A008E546F /* ActivityIndicator.swift in Sources */,
 				4525D56828E45BA400F64262 /* Feedbacks.swift in Sources */,
 				45DBF89F2823DA7300EA56D1 /* ValidationViewController.swift in Sources */,
+				45074599292130D000251AFB /* ImageService.swift in Sources */,
 				456158B028993743008E546F /* DefaultImplementations.swift in Sources */,
 				45149A28283BEB4800A63C29 /* GeolocationViewController.swift in Sources */,
 				45149A3D2858F42C00A63C29 /* GitHubSignup1ViewController.swift in Sources */,
 				4563C32E28A73F8C008D0647 /* APIWrappersViewController.swift in Sources */,
 				452F4F5228F583B60035CE72 /* CustomPickerViewAdapterExample1ViewController.swift in Sources */,
+				4507459D292136F800251AFB /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

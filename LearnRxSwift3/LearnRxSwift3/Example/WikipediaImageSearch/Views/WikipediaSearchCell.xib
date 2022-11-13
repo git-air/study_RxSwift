@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WikipediaSearchCell" id="fkN-S7-2WF" customClass="WikipediaSearchCell1" customModule="LearnRxSwift3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="599" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fkN-S7-2WF" id="MI9-Sl-L1B">
+                <rect key="frame" x="0.0" y="0.0" width="599" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hG-8E-mFN">
+                        <rect key="frame" x="10" y="18" width="579" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gox-CH-d0A">
+                        <rect key="frame" x="10" y="80" width="579" height="103"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a8X-ob-Tu6">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtN-Aj-tKp">
+                        <rect key="frame" x="10" y="47" width="579" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dtN-Aj-tKp" firstAttribute="leading" secondItem="MI9-Sl-L1B" secondAttribute="leading" constant="10" id="0AI-jT-j8Z"/>
+                    <constraint firstItem="1hG-8E-mFN" firstAttribute="leading" secondItem="MI9-Sl-L1B" secondAttribute="leading" constant="10" id="4ga-Ay-jOc"/>
+                    <constraint firstAttribute="trailing" secondItem="Gox-CH-d0A" secondAttribute="trailing" constant="10" id="BmX-ba-XkO"/>
+                    <constraint firstAttribute="trailing" secondItem="1hG-8E-mFN" secondAttribute="trailing" constant="10" id="OyG-Ii-eyA"/>
+                    <constraint firstItem="Gox-CH-d0A" firstAttribute="leading" secondItem="MI9-Sl-L1B" secondAttribute="leading" constant="10" id="ebb-9g-RQY"/>
+                    <constraint firstAttribute="trailing" secondItem="dtN-Aj-tKp" secondAttribute="trailing" constant="10" id="tmN-Px-Ewq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="URLOutlet" destination="dtN-Aj-tKp" id="jbA-RQ-baE"/>
+                <outlet property="imagesOutlet" destination="Gox-CH-d0A" id="BXI-av-f5n"/>
+                <outlet property="titleOutlet" destination="1hG-8E-mFN" id="dZC-uX-cUk"/>
+            </connections>
+            <point key="canvasLocation" x="-273.1884057971015" y="43.526785714285715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
